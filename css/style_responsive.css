@@ -1,17 +1,24 @@
+/* Estilos específicos para pantallas medianas (tablets, entre 576px y 992px) */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+
+    /* Menú de navegación oculto en pantallas medianas, pero se cambia a columna */
     .navegacion {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 0;
         left: 10px;
-        width: 300px;
+        width: 300px; /* Menú más pequeño */
         border-radius: 10px;
         box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     }
+
+    /* Reduce el tamaño de la fuente del enlace en el título */
     .titulo a {
         font-size: 0.7em;
     }
+
+    /* Ajusta el tamaño de la descripción y la estructura */
     .titulo .cuerpo {
         font-size: 1em;
         padding-bottom: 50px;
@@ -20,27 +27,36 @@
         flex-direction: column;
         
     }
+
+    /* Imagen principal más pequeña y con poca opacidad*/
     .img_principal {
         width: 90%;
         opacity: 20%;
     }
+
+    /* Ajusta la imagen de la sección 'quién soy' para que sea más pequeña */
     .img_quiensoy img {
         width: 200px;
         height: 100%;
     }
+
+    /* Formulario ajustado*/
     .formulario {
         display: flex;
         padding-top: 160px;
         height: 20%;
         width: 100%;
     }
+
+    /* Copyright ajustado, se mueve más hacia la izquierda */
     .copyright {
         padding: 0 0 100px;
         left: 0;
         right: 150px;
     }
+
+    /* Icono de Salesforce más pequeño */
     #salesforce {
         width: 30%;
     }
-
 }

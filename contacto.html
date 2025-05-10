@@ -10,12 +10,18 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_responsive.css">
+
     <link rel="shortcut icon" href="img/icon.PNG" type="image/x-icon">
     <title>Elia Martínez - Desarrolladora Software</title>
 </head>
+
 <body>
     <section>
+
+        <!-- Círculo decorativo en el fondo, definido con clip-path en CSS -->
         <div class="circulo"></div>
+
+        <!-- Cabecera de la web con el nombre como logo y barra de navegación -->
         <header>
             <a href="index.html" class="logo">Elia Martínez</a>
             <ul class="navegacion">
@@ -33,6 +39,8 @@
                 </li>
             </ul>
         </header>
+
+        <!-- Encabezado de la sección de contacto con estilo centrado y color destacado -->
         <div class="informacion">
             <div class="titulo">
                 <h2>Formulario de Contacto<br></h2>
@@ -40,8 +48,12 @@
             </div>
         </div>
 
+         <!-- Formulario con estilo personalizado y diseño en caja con bordes redondeados -->
         <div class="formulario">
             <form action="mailto:elia.mmoral@gmail.com" method="post">
+                <!-- Envío del formulario vía correo electrónico (mailto) -->
+
+                <!-- Primer bloque con campos de datos personales -->
                 <fieldset>
                     <legend>Datos personales</legend>
                     <label for="nombre">Nombre:</label>
@@ -65,17 +77,20 @@
                     </div>
                 </fieldset>
         
+                <!-- Área de texto para que el usuario exprese su objetivo o consulta -->
                 <fieldset>
                     <legend>¿Qué necesitas? ¡Cuéntame!</legend>
                     <textarea id="objetivo" name="objetivo"></textarea>
                 </fieldset>
         
+                <!-- Confirmación legal mediante checkbox -->
                 <fieldset>
                     <legend>Acepta la protección de datos</legend>
                     <input type="checkbox" id="proteccion" name="proteccion" required>
                     <label for="proteccion">He leído y acepto las condiciones de uso de esta web.</label>
                 </fieldset>
         
+                <!-- Botón centrado con estilo -->
                 <div class="enviar">
                     <button type="submit">Enviar</button>
                 </div>
@@ -84,6 +99,7 @@
 
     </section>
 
+    <!-- Pie de página con derechos de autor y enlaces a redes sociales -->
     <div id="copyright_cv">
         <div class="copyright">
             <p>&copy;Web personal creada para la materia de Lenguaje de Marcas <br> del CFGS DAM</p>

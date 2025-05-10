@@ -1,14 +1,20 @@
+/* Tipos de letra en la web */
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Reinicio general del estilo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Mona Sans", sans-serif;
 }
+
+/* Fondo morado del body */
 body {
     background: rgb(157, 95, 157);
 }
+
+/* Sección principal centrada */
 section {
     position: relative;
     width: 100%;
@@ -18,7 +24,9 @@ section {
     align-items: center;
     padding: 100px;
 }
- #copyright_cv {
+
+/* Estilo del copyright en el pie de la página */
+#copyright_cv {
     position: relative;
     width: 100%;
     display: flex;
@@ -26,6 +34,8 @@ section {
     align-items: center;
     padding: 0px 100px 100px 100px;
 }
+
+/* Header con logo y menú de navegación */
 header {
     position: absolute;
     top: 0;
@@ -36,6 +46,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+/* El logo tiene un fondo rosa y tiene un efecto al pasar el ratón */
 header .logo {
     color: white;
     font-size: 2.5em;
@@ -52,14 +64,19 @@ header .logo:hover {
     background: white;
     transition: 1s;
 }
+
+/* Menú de navegación: lista de enlaces */
 header .navegacion {
     position: relative;
     display: flex;
 }
+
 header .navegacion li {
     list-style: none;
     margin-left: 30px;
 }
+
+/* Efecto hover en los enlaces del menú */
 header .navegacion li a {
     text-decoration: none;
     color: white;
@@ -73,7 +90,10 @@ header .navegacion li a:hover {
     border-bottom: 4px solid rgb(193, 115, 193);
     padding: 2px;
 }
+
 /*Contenido web*/
+
+/* Estilo para la información de la página */
 .informacion {
     position: relative;
     width: 100%;
@@ -92,12 +112,7 @@ header .navegacion li a:hover {
     flex-direction: column;
 }
 
-.titulo .cuerpo {
-    font-size: 1.1em;
-}
-#nombre {
-    font-weight: bold;
-}
+/* Título */
 .titulo {
     position: relative;
     max-width: 500px;
@@ -107,6 +122,8 @@ header .navegacion li a:hover {
     font-size: 2em;
     color: white;
 }
+
+/* Destacar la palabra "Solicitud de Información" con un fondo con color */
 .titulo h2 span {
     background: rgb(193, 115, 193);
     color: white;
@@ -116,6 +133,8 @@ header .navegacion li a:hover {
     font-weight: 500;
     border-radius: 15px;
 }
+
+/* Estilo para los párrafos */
 .titulo p {
     font-size: 1em;
     line-height: 1.5;
@@ -125,6 +144,8 @@ header .navegacion li a:hover {
     margin-bottom: 25px;
     margin-top: 20px;
 }
+
+/* Enlace debajo del título con fondo blanco y efecto hover */
 .titulo a {
     text-decoration: none;
     text-transform: uppercase;
@@ -141,6 +162,15 @@ header .navegacion li a:hover {
     background: rgb(240, 117, 185);
     transition: 0.5s;
 }
+
+.titulo .cuerpo {
+    font-size: 1.1em;
+}
+#nombre {
+    font-weight: bold;
+}
+
+/* Imagen principal */
 .img_principal {
     width: 650px;
     display: flex;
@@ -149,9 +179,12 @@ header .navegacion li a:hover {
     margin-top: -50px;
     z-index: -5;
 }
+
 .img_principal img {
     height: 80vh;
 }
+
+/* Imagen para la sección 'quién soy' */
 .img_quiensoy {
     width: 650px;
     display: flex;
@@ -164,10 +197,15 @@ header .navegacion li a:hover {
 .img_quiensoy img {
     height: 70vh;
 }
+
+/* Efecto hover en la imagen de 'quién soy' */
 .img_quiensoy img:hover {
     height: 80vh;
 }
-/*Copyright */
+
+/* Copyright */
+/* Pie de página: centrado de texto y redes sociales */
+
 .copyright {
     position: absolute;
     bottom: 0;
@@ -178,12 +216,16 @@ header .navegacion li a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .copyright p {
     color: rgb(213, 191, 191);
     text-align: center;
     margin-left: 100px;
 }
+
 /*Redes sociales*/
+
+/* Redes sociales, posicionadas en la esquina inferior derecha */
 .rrss {
     position: absolute;
     right: 0;
@@ -205,7 +247,8 @@ header .navegacion li a:hover {
     font-size: 3em;
     transition: 0.3s;
 }
-/*Circulo */
+
+/* Círculo decorativo en el fondo, en la esquina superior derecha */
 .circulo {
     position: absolute;
     top: 0;
@@ -216,8 +259,10 @@ header .navegacion li a:hover {
     height: 100%;
     z-index: -1000;
 }
-/*CV page*/
-/* Experiencia */
+
+/* CV */
+
+/* Estilo de las listas de experiencia */
 
 .titulo_2 {
     position: relative;
@@ -237,6 +282,7 @@ header .navegacion li a:hover {
     list-style: none;
 }
 
+/* Los títulos de los proyectos de experiencia */
 .experienceItemList {
     padding-left: 20px;
     padding-bottom: 5px;
@@ -266,7 +312,8 @@ header .navegacion li a:hover {
     left: -5px;
     margin-top: 7px;
 }
-/*Proyectos*/
+
+/* Proyectos */
 
 .row {
     overflow-x: hidden;
@@ -275,7 +322,7 @@ header .navegacion li a:hover {
     padding: 20px 45px 50px 45px;
 }
 
-
+/* Estilo para los proyectos en cuadrícula */
 .isotope-wrapper {
     position: relative;
     width: 100%;
@@ -291,6 +338,7 @@ header .navegacion li a:hover {
     align-items: center;
 }
 
+/* Estilo de las cajas de los proyectos */
 .isotope-item {
     position: relative;
     width: 80%;
@@ -416,6 +464,8 @@ textarea {
     margin-bottom: 5px;
     border-radius: 20px;
 }
+
+/* Estilo para el botón de envío */
 .enviar {
     text-align: center;
     margin-top: 10px;
