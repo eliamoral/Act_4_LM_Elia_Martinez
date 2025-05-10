@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Iconos de Ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
+    <link rel="shortcut icon" href="img/icon.PNG" type="image/x-icon">
+    <title>Elia Martínez - Desarrolladora Software</title>
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="index.html" class="logo">Elia Martínez</a>
+            <ul class="navegacion">
+                <li>
+                    <a href="quien_soy.html">¿Quien soy?</a>
+                </li>
+                <li>
+                    <a href="cv.html">CV</a>
+                </li>
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contáctame</a>
+                </li>
+            </ul>
+        </header>
+        <div class="informacion">
+            <div class="titulo">
+                <h2>Formulario de Contacto<br></h2>
+                <h2><span>Solicitud de Información</span></h2>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <form action="mailto:elia.mmoral@gmail.com" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <div class="campo">
+                        <input type="text" id="nombre" required>
+                    </div>
+        
+                    <label for="apellidos">Apellidos:</label>
+                    <div class="campo">
+                        <input type="text" id="apellidos" required>
+                    </div>
+        
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <div class="campo">
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+        
+                    <label for="email">Email:</label>
+                    <div class="campo">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>¿Qué necesitas? ¡Cuéntame!</legend>
+                    <textarea id="objetivo" name="objetivo"></textarea>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Acepta la protección de datos</legend>
+                    <input type="checkbox" id="proteccion" name="proteccion" required>
+                    <label for="proteccion">He leído y acepto las condiciones de uso de esta web.</label>
+                </fieldset>
+        
+                <div class="enviar">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <div id="copyright_cv">
+        <div class="copyright">
+            <p>&copy;Web personal creada para la materia de Lenguaje de Marcas <br> del CFGS DAM</p>
+        </div>
+        <ul class="rrss">
+            <li>
+                <a href="mailto:elia.mmoral@gmail.com"><ion-icon name="mail-unread-outline"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/eliamartinezm/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://www.salesforce.com/trailblazer/eliamartinezm"><img src="img/trailhead.png" alt="Icono de Salesforce" id="salesforce"></a>
+            </li>
+        </ul>    
+    </div>
+</body>
+</html>

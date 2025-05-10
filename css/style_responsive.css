@@ -1,0 +1,46 @@
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navegacion {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .titulo a {
+        font-size: 0.7em;
+    }
+    .titulo .cuerpo {
+        font-size: 1em;
+        padding-bottom: 50px;
+        margin: 10px 25px 50px 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img_principal {
+        width: 90%;
+        opacity: 20%;
+    }
+    .img_quiensoy img {
+        width: 200px;
+        height: 100%;
+    }
+    .formulario {
+        display: flex;
+        padding-top: 160px;
+        height: 20%;
+        width: 100%;
+    }
+    .copyright {
+        padding: 0 0 100px;
+        left: 0;
+        right: 150px;
+    }
+    #salesforce {
+        width: 30%;
+    }
+
+}

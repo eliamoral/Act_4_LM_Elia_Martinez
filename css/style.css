@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mona Sans", sans-serif;
+}
+body {
+    background: rgb(157, 95, 157);
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+ #copyright_cv {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px 100px 100px;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    color: white;
+    font-size: 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(240, 117, 185);
+    border-radius: 8px;
+    padding: 0 10px;
+    font-family: 'Mona Sans', sans-serif;
+    font-weight: 650;
+}
+header .logo:hover {
+    color: rgb(141, 43, 141);
+    background: white;
+    transition: 1s;
+}
+header .navegacion {
+    position: relative;
+    display: flex;
+}
+header .navegacion li {
+    list-style: none;
+    margin-left: 30px;
+}
+header .navegacion li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+header .navegacion li a:hover {
+    border-bottom: 4px solid rgb(193, 115, 193);
+    padding: 2px;
+}
+/*Contenido web*/
+.informacion {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.informacion_cv {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.titulo .cuerpo {
+    font-size: 1.1em;
+}
+#nombre {
+    font-weight: bold;
+}
+.titulo {
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+}
+.titulo h2 {
+    font-size: 2em;
+    color: white;
+}
+.titulo h2 span {
+    background: rgb(193, 115, 193);
+    color: white;
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    border-radius: 15px;
+}
+.titulo p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.titulo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(141, 43, 141);
+    background: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 30px;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+.titulo a:hover{
+    color: white;
+    background: rgb(240, 117, 185);
+    transition: 0.5s;
+}
+.img_principal {
+    width: 650px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+.img_principal img {
+    height: 80vh;
+}
+.img_quiensoy {
+    width: 650px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    z-index: -5;
+}
+.img_quiensoy img {
+    height: 70vh;
+}
+.img_quiensoy img:hover {
+    height: 80vh;
+}
+/*Copyright */
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 850px;
+    margin-bottom: 20px;
+    padding: 0 200px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p {
+    color: rgb(213, 191, 191);
+    text-align: center;
+    margin-left: 100px;
+}
+/*Redes sociales*/
+.rrss {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+#salesforce {
+    width: 11%;
+}
+.rrss li {
+    padding: 10px;
+}
+.rrss li a {
+    color: white;
+    font-size: 3em;
+    transition: 0.3s;
+}
+/*Circulo */
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(183, 111, 183);
+    clip-path: circle(600px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+/*CV page*/
+/* Experiencia */
+
+.titulo_2 {
+    position: relative;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 50px;
+    padding-top: 50px;
+
+}
+
+.experienceList {
+    border-inline-start: 1px solid white;
+    position: relative;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.experienceItemList {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.experienceItemList time {
+    color: rgba(213, 213, 213, 0.639);
+}
+
+.experienceItemList h3 {
+    font-size: 1.5em;
+    text-wrap: pretty;
+}
+
+.experienceItemList p {
+    color: white;
+    margin: 0 0 30px 0;
+}
+
+.decorativeCircleList {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+
+    left: -5px;
+    margin-top: 7px;
+}
+/*Proyectos*/
+
+.row {
+    overflow-x: hidden;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px 45px 50px 45px;
+}
+
+
+.isotope-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.isotope-box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.isotope-item {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.isotope-item img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+figure.snip1321 {
+  overflow: hidden;
+  text-align: center;
+  perspective: 50em;
+}
+figure.snip1321 * {
+  box-sizing: padding-box;
+  transition: all 0.2s ease-out;
+}
+figure.snip1321 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.snip1321 h4 {
+    margin-top: 15px;
+  margin-bottom: 5px;
+  color: #232323;
+}
+figure.snip1321 span {
+    padding: 30px;
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    color: #7a7a7a;
+}
+figure.snip1321 i {
+  position: relative!important;
+  font-size: 18px;
+  background-color: #a43f49;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #fff;
+}
+figure.snip1321:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  transition: all 0.4s ease-in-out;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+figure.snip1321 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+figure.snip1321:hover figcaption,
+figure.snip1321.hover figcaption {
+  transform: translateY(-50%);
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+figure.snip1321:hover:after,
+figure.snip1321.hover:after {
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+
+/* Formulario de contacto */
+
+.formulario {
+    display: flex;
+    padding-top: 50px;
+}
+
+form {
+    width: 700px;
+    padding: 30px;
+    border: 5px solid #fcbadb;
+    background-color: #fdeaf7a7;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    color: #695b66;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+.enviar {
+    text-align: center;
+    margin-top: 10px;
+}
+.enviar button {
+    background-color: rgb(240, 117, 185);
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 12px 18px;
+    margin-top: 10px;
+}
+.enviar button:hover {
+    opacity: 0.8;
+}
+fieldset {
+    border: 1px solid #a49595b2;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
